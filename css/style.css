@@ -197,14 +197,14 @@
 }
 
 .container__repair::after {
-  content: url('./img/ellipse_small.png');
+  content: url('../img/ellipse_small.png');
   position: absolute;
   left: 60%;
   top: 64%;
 }
 
 .container__repair::before {
-  content: url('./img/ellipse_big.png');
+  content: url('../img/ellipse_big.png');
   position: absolute;
   left: 65%;
   top: 20%;
@@ -294,14 +294,14 @@
 }  
 
 .carousel-item_black::after {
-  content: url('./img/ellipse_small.png');
+  content: url('../img/ellipse_small.png');
   position: absolute;
   left: 60%;
   top: 64%;
 }
 
 .carousel-item_black::before {
-  content: url('./img/ellipse_big.png');
+  content: url('../img/ellipse_big.png');
   position: absolute;
   left: 65%;
   top: 20%;
@@ -457,7 +457,7 @@
 }
 
 .service__block__img {
-  background-image: url('./img/service-ellipse.png');
+  background-image: url('../img/service-ellipse.png');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   padding: 30px 0;
@@ -602,11 +602,11 @@
 }
 
 .service__double {
-  background-image: url('./img/repair-ellipse-blue.png');
+  background-image: url('../img/repair-ellipse-blue.png');
 }
 
 .service__double::before {
-  content: url('./img/repair_gear.png');
+  content: url('../img/repair_gear.png');
 }
 
 /* step */
@@ -666,7 +666,7 @@
 
 /* consultation */
 .container__consultation {
-  background:url('./img/consultation__bg.png'),  linear-gradient(to right, #F2F3F7 0%, #DDE0EA 100%);
+  background:url('../img/consultation__bg.png'),  linear-gradient(to right, #F2F3F7 0%, #DDE0EA 100%);
   background-repeat: no-repeat;
 
   border-radius: 20px;

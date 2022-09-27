@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'Manrope';
   src: local('Manrope Bold'), local('Manrope-Bold'),
-      url('../font/Manrope-Bold.woff') format('woff'),
-      url('../font/Manrope-Bold.woff2') format('woff2');
+      url('/font/Manrope-Bold.woff') format('woff'),
+      url('/font/Manrope-Bold.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
 }
@@ -10,8 +10,8 @@
 @font-face {
   font-family: 'Manrope';
   src: local('Manrope Semibold'), local('Manrope-Semibold'),
-      url('../font/Manrope-Semibold.woff') format('woff'),
-      url('../font/Manrope-Semibold.woff2') format('woff2');
+      url('/font/Manrope-Semibold.woff') format('woff'),
+      url('/font/Manrope-Semibold.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
 }
@@ -19,8 +19,8 @@
 @font-face {
   font-family: 'Manrope';
   src: local('Manrope Regular'), local('Manrope-Regular'),
-        url('../font/Manrope-Regular.woff') format('woff'),
-        url('../font/Manrope-Regular.woff2') format('woff2');
+        url('/font/Manrope-Regular.woff') format('woff'),
+        url('/font/Manrope-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -28,8 +28,8 @@
 @font-face {
   font-family: 'Manrope';
   src: local('Manrope Light'), local('Manrope-Light'),
-        url('../font/Manrope-Light.woff') format('woff'),
-        url('../font/Manrope-Light.woff2') format('woff2');
+        url('/font/Manrope-Light.woff') format('woff'),
+        url('/font/Manrope-Light.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
 }
@@ -37,8 +37,8 @@
 @font-face {
   font-family: 'Manrope';
   src: local('Manrope Thin'), local('Manrope-Thin'),
-        url('../font/Manrope-Thin.woff') format('woff'),
-        url('../font/Manrope-Thin.woff2') format('woff2');
+        url('/font/Manrope-Thin.woff') format('woff'),
+        url('/font/Manrope-Thin.woff2') format('woff2');
   font-weight: 100;
   font-style: normal;
 }
@@ -46,8 +46,8 @@
 @font-face {
   font-family: 'Manrope';
   src: local('Manrope Medium'), local('Manrope-Medium'),
-        url('../font/Manrope-Medium.woff') format('woff'),
-        url('../font/Manrope-Medium.woff2') format('woff2');
+        url('/font/Manrope-Medium.woff') format('woff'),
+        url('/font/Manrope-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
 }
@@ -55,8 +55,8 @@
 @font-face {
   font-family: 'Manrope';
   src: local('Manrope ExtraBold'), local('Manrope-ExtraBold'),
-        url('../font/Manrope-ExtraBold.woff') format('woff'),
-        url('../font/Manrope-ExtraBold.woff2') format('woff2');
+        url('/font/Manrope-ExtraBold.woff') format('woff'),
+        url('/font/Manrope-ExtraBold.woff2') format('woff2');
   font-weight: 800;
   font-style: normal;
 }
@@ -64,8 +64,8 @@
 @font-face {
   font-family: 'Caveat';
   src: local('Caveat Bold'), local('Caveat-Bold'),
-        url('../font/Caveat-Bold.woff') format('woff'),
-        url('../font/Caveat-Bold.woff2') format('woff2');
+        url('/font/Caveat-Bold.woff') format('woff'),
+        url('/font/Caveat-Bold.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
 }
@@ -73,8 +73,8 @@
 @font-face {
   font-family: 'Caveat';
   src: local('Caveat Regular'), local('Caveat-Regular'),
-        url('../font/Caveat-Regular.woff') format('woff'),
-        url('../font/Caveat-Regular.woff2') format('woff2');
+        url('/font/Caveat-Regular.woff') format('woff'),
+        url('/font/Caveat-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }

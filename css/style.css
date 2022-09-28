@@ -465,7 +465,7 @@
 }
 
 .service__block__img::before {
-  content: url('./img/service-key.png');
+  content: url('../img/service-key.png');
   display: inline-block;
   position: absolute;
   left: 65%;

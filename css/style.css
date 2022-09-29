@@ -622,7 +622,7 @@
   background-color: var(--bg-hex);
   padding: 20px;
   width: 100%;
-  height: auto;
+  height: 100%;
   margin: 0 auto;
 }
 

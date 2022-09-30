@@ -735,6 +735,7 @@ line-height: 22px;
 .container__consultation__contacts {
   background:url('../img/cons__contacts.png'),  linear-gradient(90deg, #F2F3F7 39.73%, #C3E2FF 100%);
   background-repeat: no-repeat;
+  border-radius: 20px;
 }
 
 /* MODAL */
@@ -847,6 +848,7 @@ line-height: 22px;
   content: url('../img/repair__time.png');
 }  
 
+
 /* model */
 
 .model__item {
@@ -859,8 +861,8 @@ line-height: 22px;
 
 /* breakdowns */
 
-.breakdowns {
-  width: 220px;
+.breakdowns__block {
+  /* width: 220px; */
   height: 217px;
 
   background: #FFFFFF;
@@ -910,3 +912,147 @@ line-height: 22px;
   content: url('../img/Arrow.png');
   padding-left: 5px;
 }
+
+
+/* CARTRIDGES TITLE */
+.accordion {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4rem;
+}
+.accordion-button {
+  width: 100%;
+  background-color: white;
+  text-align: left;
+}
+
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: white;
+}
+
+.accordion-button::after {
+  color: #353535;
+  margin-left: 10px;
+}
+
+.accordion-button:focus {
+  border-color: none;
+  outline: 0; 
+  box-shadow: none; 
+}
+
+.accordion-item-cartridge {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.cartridges__form {
+  padding: 30px;
+  background-color: var(--bg-hex);
+  border-radius: 20px;
+
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4rem;
+}
+
+.check__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cartridges__lable {
+  margin-right: auto;
+}
+
+.cartridges__input {
+  margin-right: 10px;
+}
+
+.container__consultation__cartridges {
+  background:url('../img/cartridges__bg.png'),  linear-gradient(90deg, #F2F3F7 39.73%, #C3E2FF 100%);
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+.service__cartridge::before {
+  content:"";
+}
+
+/* advantages */
+
+.advantages__block {
+  padding: 20px;
+  margin-top: 20px;
+  min-height: 285px;
+  display: flex;
+  flex-direction: column;
+
+  background-color: white;
+  box-shadow: 0px 0px 26px rgba(196, 196, 196, 0.26);
+  border-radius: 20px;
+}
+
+.advantages__img {
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+.advantages__title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.7rem;
+}
+
+.advantages__descr {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4rem;
+  color: var(--color-descr);
+}
+
+
+/* input type number */
+.input-number {
+  display: flex;
+  align-items: center;
+  /* background: #FFFFFF;
+  border: 1px solid #E5E8EE; */
+  box-sizing: border-box;
+  border-radius: 6px;
+  color: #424348;
+  font-size: 14px;
+  text-align: center;
+  width: calc(33px * 3);
+
+}
+
+.input-number__input {
+  background:var(--bg-hex);
+  width: 32px;
+  height: 32px;
+  border: none;
+  padding: 8px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.input-number__minus,
+.input-number__plus {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1rem;
+  background-color: white;
+  border: 1px solid #CFCFCF;
+}
+/* /input type number */

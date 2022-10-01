@@ -15,11 +15,51 @@
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/fonts.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
 
 </head>
 
 <body>
-  <header class="header__nav">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light md-max-close">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Переключатель навигации">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="header__title">
+        <a href="index.html" class="title__link">
+          <img src="./img/Vector.png" alt="Logo_print" class="title__img title__img-print m-0">
+        </a>
+      </div> 
+      <div class="header__search">
+        <form action="#">
+          <div class="input-group border-0 rounded-pill p-2">
+            <div class="input-group-prepend">
+              <label for="search_model" id="button-addon4" type="button" class="btn btn-link text-info border-reset"><img src="./img/search1.png" alt="Поиск"></label>
+            </div>
+            <input type="search" placeholder="Поиск по модели" aria-describedby="button-addon4" class="form-control bg-none border-reset border-0" id="search_model">
+          </div>
+        </form>
+      </div>  
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center fw-bold">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./mfu__title.html">МФУ Kyocera</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./cartridges.html">Картридж</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <header class="header__nav md-close">
     <div class="container">
       <div class="row">
         <div class="col-12 d-flex align-items-center justify-content-between">
@@ -35,7 +75,7 @@
                 <div class="input-group-prepend">
                   <button id="button-addon4" type="button" class="btn btn-link text-info border-reset"><img src="./img/search1.png" alt="Поиск"></button>
                 </div>
-                <input type="search" placeholder="Поиск по модели устройства" aria-describedby="button-addon4" class="form-control bg-none border-reset border-0">
+                <input type="search" placeholder="Поиск по модели" aria-describedby="button-addon4" class="form-control bg-none border-reset border-0">
               </div>
             </form>
           </div>  
@@ -58,305 +98,331 @@
     </div>
   </header>
 
-  <div class="container nav__menu mb-4">
-    <div class="row">
-      <div class="col-12 border-reset">
-        <ul class="nav__menu__list d-flex align-items-center justify-content-evenly">
-          <li class="nav__menu__item btn-group dropdown-toggle" >
-            <div class="menu__container" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-              <a href="#" class="d-flex flex-column align-items-center justify-content-center">
-                <img src="./img/print.png" alt="" class="img-fluid">
-                <span class="nav__menu__descr">принтеры</span>
-              </a>
-            </div>
-            <ul class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left mt-4 dropdown-list">
-              <li class="dropdown-item">
-                Пункт меню
-                <div class="nested__list">
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                </div>
-              </li>
-              <li class="dropdown-item">
-                Пункт меню
-                <div class="nested__list">
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                </div>
-              </li>
-              <li class="dropdown-item">
-                Пункт меню
-                <div class="nested__list">
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                </div>
-              </li>
-              <li class="dropdown-item">
-                Пункт меню
-                <div class="nested__list">
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                </div>
-              </li>
-              <li class="dropdown-item">
-                Пункт меню
-                <div class="nested__list">
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                </div>
-              </li>
-              <li class="dropdown-item">Пункт меню
-
-              </li>
-              <li class="dropdown-item">
-                Пункт меню
-                <div class="nested__list">
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                </div>
-              </li>
-              <li class="dropdown-item">
-                Пункт меню
-                <div class="nested__list">
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                </div>
-              </li>
-            </ul>
-          </li>
-          <li class="nav__menu__item btn-group">
-            <div class="menu__container d-flex flex-column align-items-center justify-content-center" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-                <img src="./img/mfu.png" alt="Мфу" class="img-fluid">
-                <span class="nav__menu__descr">Мфу</span>
-              </div>
-            <ul class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left mt-4 dropdown-list">
-              <li class="dropdown-item">
-                Пункт меню
-              <div class="nested__list">
-                  <a href="mfu__title.html" class="nested__link">MFU Kyocera</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                </div>
-              </li>
-              <li class="dropdown-item">
-                Пункт меню
-              <div class="nested__list">
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                </div>
-              </li>
-              <li class="dropdown-item">
-                Пункт меню
-              <div class="nested__list">
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                </div>
-              </li>
-              <li class="dropdown-item">
-                Пункт меню
-              <div class="nested__list">
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                </div>
-              </li>
-              <li class="dropdown-item">
-                Пункт меню
-              <div class="nested__list">
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                </div>
-              </li>
-              <li class="dropdown-item">
-                Пункт меню
-              <div class="nested__list">
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                </div>
-              </li>
-              <li class="dropdown-item">
-                Пункт меню
-              <div class="nested__list">
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                </div>
-              </li>
-              <li class="dropdown-item">
-                Пункт меню
-              <div class="nested__list">
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                </div>
-              </li>
-            </ul>
-          </li>
-          <li class="nav__menu__item btn-group dropdown-toggle" >
-            <div class="menu__container" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-              <a href="#" class="d-flex flex-column align-items-center justify-content-center">
-                <img src="./img/kartr.png" alt="картриджи" class="img-fluid">
-                <span class="nav__menu__descr">картриджи</span>
-              </a>
-            </div>
-            <ul class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left mt-4 dropdown-list">
-              <li class="dropdown-item">
-                Пункт меню
-              <div class="nested__list">
-                  <a href="cartridges.html" class="nested__link">Картридж HP Q7553X</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                </div>
-              </li>
-              <li class="dropdown-item">
-                Пункт меню
-              <div class="nested__list">
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                </div>
-              </li>
-              <li class="dropdown-item">
-                Пункт меню
-              <div class="nested__list">
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                </div>
-              </li>
-              <li class="dropdown-item">
-                Пункт меню
-              <div class="nested__list">
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                </div>
-              </li>
-              <li class="dropdown-item">
-                Пункт меню
-              <div class="nested__list">
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                </div>
-              </li>
-              <li class="dropdown-item">
-                Пункт меню
-              <div class="nested__list">
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                </div>
-              </li>
-              <li class="dropdown-item">
-                Пункт меню
-              <div class="nested__list">
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                </div>
-              </li>
-              <li class="dropdown-item">
-                Пункт меню
-              <div class="nested__list">
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                  <a href="#" class="nested__link">Пункт меню</a>
-                </div>
-              </li>
-            </ul>
-          </li>
-          <li class="nav__menu__item btn-group dropdown-toggle" >
-            <div class="menu__container">
-              <a href="#" class="d-flex flex-column align-items-center justify-content-center">
-                <img src="./img/price.png" alt="цены" class="img-fluid">
-                <span class="nav__menu__descr">цены</span>
-              </a>
-            </div>
-          </li>
-          <li class="nav__menu__item btn-group dropdown-toggle" >
-            <div class="menu__container">
-              <a href="#" class="d-flex flex-column align-items-center justify-content-center">
-                <img src="./img/masters.png" alt="Выезд мастера" class="img-fluid">
-                <span class="nav__menu__descr">выезд мастера</span>
-              </a>  
-            </div>
-          </li>
-          <li class="nav__menu__item btn-group dropdown-toggle" >
-            <div class="menu__container">
-              <a href="contacts.html" class="d-flex flex-column align-items-center justify-content-center">
-                <img src="./img/contacts.png" alt="Контакты" class="img-fluid">
-                <span class="nav__menu__descr">контакты</span>
-              </a>
-            </div>
-          </li>
-        </ul>
+  <section class="header__messages my-4 md-max-close">
+    <div class="container">
+      <div class="row">
+        <div class="header__messages__link messages__link text-center">
+          <a href="" class="link">
+            <img src="./img/whatUP.png" alt="whatsUP">
+          </a>
+          <a href="" class="link">
+            <img src="./img/telegram.png" alt="telegram">
+          </a>
+          <a href="" class="link">
+            <img src="./img/mail.png" alt="mail">
+          </a>
+        </div>
+        <div class="text-center mt-3">
+          <a href="#" class="link-primary master-link pe-4">Вызвать мастера</a>
+        </div>
+        <div class="text-center mt-3 mb-0">
+          <p class="section__descr">Выездной ремонт по всей Москве</p>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
+
+  <section>
+    <div class="container nav__menu md-close">
+      <div class="row">
+        <div class="col-12 border-reset">
+          <ul class="nav__menu__list d-flex align-items-center justify-content-evenly">
+            <li class="nav__menu__item btn-group dropdown-toggle" >
+              <div class="menu__container" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                <a href="#" class="d-flex flex-column align-items-center justify-content-center">
+                  <img src="./img/print.png" alt="" class="img-fluid">
+                  <span class="nav__menu__descr">принтеры</span>
+                </a>
+              </div>
+              <ul class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left mt-4 dropdown-list">
+                <li class="dropdown-item">
+                  Пункт меню
+                  <div class="nested__list">
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  Пункт меню
+                  <div class="nested__list">
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  Пункт меню
+                  <div class="nested__list">
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  Пункт меню
+                  <div class="nested__list">
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  Пункт меню
+                  <div class="nested__list">
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                  </div>
+                </li>
+                <li class="dropdown-item">Пункт меню
+
+                </li>
+                <li class="dropdown-item">
+                  Пункт меню
+                  <div class="nested__list">
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  Пункт меню
+                  <div class="nested__list">
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__menu__item btn-group">
+                <div class="menu__container d-flex flex-column align-items-center justify-content-center" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                  <img src="./img/mfu.png" alt="Мфу" class="img-fluid">
+                  <span class="nav__menu__descr">Мфу</span>
+                </div>
+              <ul class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left mt-4 dropdown-list">
+                <li class="dropdown-item">
+                  Пункт меню
+                <div class="nested__list">
+                    <a href="mfu__title.html" class="nested__link">MFU Kyocera</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  Пункт меню
+                <div class="nested__list">
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  Пункт меню
+                <div class="nested__list">
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  Пункт меню
+                <div class="nested__list">
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  Пункт меню
+                <div class="nested__list">
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  Пункт меню
+                <div class="nested__list">
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  Пункт меню
+                <div class="nested__list">
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  Пункт меню
+                <div class="nested__list">
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__menu__item btn-group dropdown-toggle" >
+              <div class="menu__container" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                <a href="#" class="d-flex flex-column align-items-center justify-content-center">
+                  <img src="./img/kartr.png" alt="картриджи" class="img-fluid">
+                  <span class="nav__menu__descr">картриджи</span>
+                </a>
+              </div>
+              <ul class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left mt-4 dropdown-list">
+                <li class="dropdown-item">
+                  Пункт меню
+                <div class="nested__list">
+                  <a href="cartridges.html" class="nested__link">Картридж HP Q7553X</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  Пункт меню
+                <div class="nested__list">
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  Пункт меню
+                <div class="nested__list">
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  Пункт меню
+                <div class="nested__list">
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  Пункт меню
+                <div class="nested__list">
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  Пункт меню
+                <div class="nested__list">
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  Пункт меню
+                <div class="nested__list">
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  Пункт меню
+                <div class="nested__list">
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                    <a href="#" class="nested__link">Пункт меню</a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__menu__item btn-group dropdown-toggle" >
+              <div class="menu__container">
+                <a href="#" class="d-flex flex-column align-items-center justify-content-center">
+                  <img src="./img/price.png" alt="цены" class="img-fluid">
+                  <span class="nav__menu__descr">цены</span>
+                </a>
+              </div>
+            </li>
+            <li class="nav__menu__item btn-group dropdown-toggle" >
+              <div class="menu__container">
+                <a href="#" class="d-flex flex-column align-items-center justify-content-center">
+                  <img src="./img/masters.png" alt="Выезд мастера" class="img-fluid">
+                  <span class="nav__menu__descr">выезд мастера</span>
+                </a>  
+              </div>
+            </li>
+            <li class="nav__menu__item btn-group dropdown-toggle" >
+              <div class="menu__container">
+                <a href="contacts.html" class="d-flex flex-column align-items-center justify-content-center">
+                  <img src="./img/contacts.png" alt="Контакты" class="img-fluid">
+                  <span class="nav__menu__descr">контакты</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="contacts__info m-5">
     <div class="container container_hex">
         <div class="row">
-            <div class="col-md-4 col-12">
-                <ul class="footer__contacts footer__list">
+            <div class="col-lg-4 col-12">
+                <ul class="footer__contacts footer__list text-lg-start text-center">
                     <li class="footer__item footer__head">
                       Контакты:
                     </li>
@@ -369,7 +435,7 @@
                     <li class="footer__item footer__head">
                       info@arngroup.ru
                     </li>
-                    <li class="footer__item footer__head">
+                    <li class="footer__item footer__head md-close">
                         <a href="" class="link">
                             <img src="./img/whatUP.png" alt="whatsUP">
                           </a>
@@ -382,8 +448,8 @@
                     </li>
                   </ul>
             </div>
-            <div class="col-md-4 col-12">
-                <ul class="footer__contacts footer__list">
+            <div class="col-lg-4 col-12">
+                <ul class="footer__contacts footer__list text-lg-start text-center">
                     <li class="footer__item footer__head">
                         Реквизиты:
                     </li>
@@ -399,8 +465,8 @@
                     </li>
                   </ul>
             </div>
-            <div class="col-md-4 col-12">
-                <ul class="footer__contacts footer__list">
+            <div class="col-lg-4 col-12">
+                <ul class="footer__contacts footer__list text-lg-start text-center">
                     <li class="footer__item footer__head">
                         Адрес:
                     </li>
@@ -424,7 +490,7 @@
     </div>
   </section>
 
-  <section class="pay">
+  <section class="pay sm-close">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -465,7 +531,7 @@
     </div>
   </section>
   
-  <section class="section-offset consultation m-5">
+  <section class="section-offset consultation m-5 sm-close">
     <div class="container container__consultation__contacts py-3">
       <div class="row my-4">
         <div class="col-5">
@@ -479,7 +545,7 @@
     </div>
   </section>
 
-  <section class="model my-5">
+  <section class="model my-5 sm-close">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -536,13 +602,13 @@
                 <div class="col-12">
                   <p class="form__link__descr">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности</p>
                 </div>
-                <div class="col-12">
-                  <button type="submit" ><a href="#" class="btn btn-perfect btn_call">Отправить</a></button>
+                <div class="col-12 text-center text-lg-start">
+                  <button type="submit" ><a href="#" class="btn btn-perfect btn_call btn-mobile">Отправить</a></button>
                 </div>
               </div>
             </form>
           </div>
-          <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center text-center">
+          <div class="col-lg-4 mt-lg-0 mt-5 tel__section md-close">
             <h3 class="tel__descr mb-3">Или свяжитесь с нами <br> по телефону:</h3>
             <img src="./img/tel_form.png" alt="tel" class="img-fluid">
           </div>

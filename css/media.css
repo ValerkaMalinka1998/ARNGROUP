@@ -1,0 +1,131 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
+:root {
+    --color-gray: #E5E5E5;
+    --bg-blue: #F0F8FF;
+    --active-list: #007AFF;
+    --bg-hex: #F2F3F7;
+    --color-descr: #929292;
+    --section-gray:#F5F5F5;
+    --modal-color: #353535;
+    --color-mobile-gray: #666666;
+}
+    
+@media (min-width: 992px) {
+    .md-max-close {
+        display: none;
+    }
+} 
+
+@media (max-width: 992px) {
+    .md-close {
+        display: none;
+    }
+
+
+    .container__repair {
+        background: var(--bg-hex);
+    }
+
+    .repair__title {
+        color: black;
+        text-align: center;
+    }
+
+    .repair-form {
+        text-align: center;
+    }
+
+    .container__repair {
+        padding: 20px;
+    }
+
+    .repair-select,
+    .repair-tel {
+        height: 40px;
+        margin-bottom: 10px;
+
+        color: var(--color-mobile-gray) !important;
+        font-size: 0.8rem;
+        font-style: italic !important;
+        font-weight: 400;
+        line-height: 1rem;
+        text-transform: none;
+    }
+    
+    .form-select,
+    .repair-tel{
+        padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+        background-color: inherit;
+        border-radius: 0;
+        border: none;
+        border-bottom:1px solid var(--color-mobile-gray);
+    }
+    
+    .btn-mobile {
+        margin: 0 auto;
+        background-color: var(--active-list);
+        color: white;
+        border: 1px solid var(--active-list);
+    }
+} 
+
+@media (max-width: 768px) {
+
+    .sm-close {
+        display: none;
+    }
+
+    .carousel-item {
+        padding: 10px;
+    }
+
+    .carousel__btn{
+        border: none;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        text-decoration: underline;
+    }
+    .carousel-indicators {
+        margin-right: 0;
+        margin-left: 40%;
+    }
+
+    .container__accord {
+        padding: 10px;
+    }
+
+    .form_radio_group label {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        border-radius: 0 !important;
+        border: 0 !important;
+        text-align: center;
+    }
+     
+    /* Checked */
+    .form_radio_group input[type=radio]:checked + label {
+        background-color: transparent;
+        border-bottom: 2px solid var(--active-list) !important;
+        color: var(--active-list)
+    }
+     
+}
+
+@media (min-width: 768px) {
+    .btn_call-circle {
+        display: none;
+    }
+    .md-min-close {
+        display: none;
+    }
+}

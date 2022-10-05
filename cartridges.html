@@ -27,7 +27,8 @@
       </button>
       <div class="header__title">
         <a href="index.html" class="title__link">
-          <img src="./img/Vector.png" alt="Logo_print" class="title__img title__img-print m-0">
+          <img src="./img/Vector.png" alt="Logo_print" class="title__img title__img-print me-2">
+          <img src="./img/ARNGROUP.png" alt="Logo_name" class="title__img title__img-name">
         </a>
       </div> 
       <div class="header__search">
@@ -80,18 +81,20 @@
             </form>
           </div>  
           <div class="header__time d-flex align-items-center">
+            <div class="time__img me-2">  
               <img src="./img/time.png" alt="Время работы">
+            </div>
               <span class="time__descr">
                 Пн — Пт <br> 10:00 — 18:00
               </span>
           </div>
           <div class="header__tel d-flex align-items-center">
-            <div class="tel__img">
+            <div class="tel__img me-2">
               <img src="./img/tel.png" alt="Телефон">
             </div>
             <div class="d-flex align-items-center flex-column">
-              <a class="tel__link" href="tel:+79161700028">+7 (916) 170-00-28</a>
               <a class="tel__link" href="tel:+74951090353">+7 (495) 109-03-53</a>
+              <a class="tel__link" href="tel:+79161700028">+7 (916) 170-00-28</a>
             </div> 
           </div>
       </div>
@@ -102,13 +105,13 @@
     <div class="container">
       <div class="row">
         <div class="header__messages__link messages__link text-center">
-          <a href="" class="link">
+          <a href="tel:+79161700028" class="link">
             <img src="./img/whatUP.png" alt="whatsUP">
           </a>
-          <a href="" class="link">
+          <a href="tel:+79161700028" class="link">
             <img src="./img/telegram.png" alt="telegram">
           </a>
-          <a href="" class="link">
+          <a href="mailto:" class="link">
             <img src="./img/mail.png" alt="mail">
           </a>
         </div>
@@ -127,8 +130,8 @@
       <div class="row">
         <div class="col-12 border-reset">
           <ul class="nav__menu__list d-flex align-items-center justify-content-evenly">
-            <li class="nav__menu__item btn-group dropdown-toggle" >
-              <div class="menu__container" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+            <li class="nav__menu__item btn-group">
+              <div class="menu__container">
                 <a href="#" class="d-flex flex-column align-items-center justify-content-center">
                   <img src="./img/print.png" alt="" class="img-fluid">
                   <span class="nav__menu__descr">принтеры</span>
@@ -211,9 +214,11 @@
               </ul>
             </li>
             <li class="nav__menu__item btn-group">
-                <div class="menu__container d-flex flex-column align-items-center justify-content-center" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-                  <img src="./img/mfu.png" alt="Мфу" class="img-fluid">
-                  <span class="nav__menu__descr">Мфу</span>
+                <div class="menu__container d-flex flex-column align-items-center justify-content-center">
+                  <a href="#" class="d-flex flex-column align-items-center justify-content-center">
+                    <img src="./img/mfu.png" alt="Мфу" class="img-fluid">
+                    <span class="nav__menu__descr">Мфу</span>
+                  </a>
                 </div>
               <ul class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left mt-4 dropdown-list">
                 <li class="dropdown-item">
@@ -299,7 +304,7 @@
               </ul>
             </li>
             <li class="nav__menu__item btn-group dropdown-toggle" >
-              <div class="menu__container" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+              <div class="menu__container d-flex flex-column align-items-center justify-content-center">
                 <a href="#" class="d-flex flex-column align-items-center justify-content-center">
                   <img src="./img/kartr.png" alt="картриджи" class="img-fluid">
                   <span class="nav__menu__descr">картриджи</span>
@@ -543,19 +548,19 @@
               <h3 class="service__title">Добавить в заказ:</h3>
               <div class="check__block">
                 <label>Оригинальный картридж</label>
-                <div class="input-number">
-                  <div class="input-number__minus">-</div>
-                  <input class="input-number__input" type="text" pattern="^[0-9]+$" value="1">
-                  <div class="input-number__plus">+</div>
+                <div class="input-number input-number1">
+                  <div class="input-number__minus input-number__minus1">-</div>
+                  <input class="input-number__input input-number__input1" type="text" pattern="^[0-9]+$" value="1">
+                  <div class="input-number__plus input-number__plus1">+</div>
                 </div>
                 <span class="check__descr">17 850 ₽</span>
               </div>
               <div class="check__block mt-2">
                 <label>Совместимый картридж</label>
-                <div class="input-number">
-                  <div class="input-number__minus">-</div>
-                  <input class="input-number__input" type="text" pattern="^[0-9]+$" value="1">
-                  <div class="input-number__plus">+</div>
+                <div class="input-number input-number2">
+                  <div class="input-number__minus input-number__minus2">-</div>
+                  <input class="input-number__input input-number__input2" type="text" pattern="^[0-9]+$" value="1">
+                  <div class="input-number__plus input-number__plus2">+</div>
                 </div>
                 <span class="check__descr">2 350 ₽</span>
               </div>
@@ -586,7 +591,7 @@
   <section class="my-5 sm-close">
     <div class="container mt-3">
       <div class="row">
-        <div class="col-md-5 pt-3">
+        <div class="col-md-6 pt-3">
           <h3 class="service__title">Ремонт офисной техники в Москве</h3>
           <p class="service__descr">Сервисный центр ООО «АРН ГРУПП» осуществляет срочный ремонт офисной техники по недорогим ценам 
             и это пожалуй самая популярная услуга, так как современные предприятия невозможно представить 
@@ -595,7 +600,7 @@
             Стоимость на ремонтные работы могут значительно отличаться, в зависимости 
             от сложности работы</p>
         </div>
-        <div class="col-md-7">
+        <div class="col-md-6">
           <div class="service__block__img service__three service__cartridge">
             <img src="./img/cartridges__list.png" alt="мфу" class="service__img">
           </div>
@@ -608,7 +613,7 @@
     <div class="container container__accord my-5">
       <h3 class="service__title">Полный список моделей аппаратов Kyocera</h3>
       <div class="row">
-        <div class="col-md-3 col-12">
+        <div class="col-md-4 col-12">
           <ul class="model__list">
             <li class="model__item">
               <a href="" class="model__link">
@@ -642,7 +647,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-md-3 col-12">
+        <div class="col-md-4 col-12">
           <ul class="model__list">
             <li class="model__item">
               <a href="" class="model__link">
@@ -676,7 +681,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-md-3 col-12">
+        <div class="col-md-4 col-12">
           <ul class="model__list">
             <li class="model__item">
               <a href="" class="model__link">
@@ -768,7 +773,7 @@
   <section class="my-5 sm-close">
     <div class="container mt-3">
       <div class="row">
-        <div class="col-md-5 pt-3">
+        <div class="col-md-6 pt-3">
           <h3 class="service__title">Ремонт офисной техники в Москве</h3>
           <p class="service__descr">Сервисный центр ООО «АРН ГРУПП» осуществляет срочный ремонт офисной техники по недорогим ценам 
             и это пожалуй самая популярная услуга, так как современные предприятия невозможно представить 
@@ -777,7 +782,7 @@
             Стоимость на ремонтные работы могут значительно отличаться, в зависимости 
             от сложности работы</p>
         </div>
-        <div class="col-md-7">
+        <div class="col-md-6">
           <div class="service__block__img service__three service__cartridge">
             <img src="./img/cartridges__list.png" alt="мфу" class="service__img">
           </div>
@@ -913,7 +918,7 @@
               <div class="col-12">
                 <p class="form__link__descr">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности</p>
               </div>
-              <div class="col-12 text-center text-lg-start">
+              <div class="col-12 text-center text-lg-start my-3">
                 <button type="submit" ><a href="#" class="btn btn-perfect btn_call btn-mobile">Отправить</a></button>
               </div>
             </div>
@@ -927,122 +932,124 @@
     </div>
   </section>
 
-  <footer class="footer text-lg-start text-center">
-    <div class="container pt-5">
-      <div class="row ">
-        <div class="col-12 col-md-4">
-          <ul class="footer__contacts footer__list">
-            <li class="footer__item footer__head">
-              Контакты:
-            </li>
-            <li class="footer__item footer__head">
-              +7 (916) 170-00-28
-            </li>
-            <li class="footer__item footer__head">
-              +7 (495) 109-03-53
-            </li>
-            <li class="footer__item footer__head">
-              info@arngroup.ru
-            </li>
-          </ul>
+  <footer class="footer-bg text-lg-start text-center">
+    <div class="footer">
+      <div class="container pt-5">
+        <div class="row ">
+          <div class="col-12 col-md-4">
+            <ul class="footer__contacts footer__list">
+              <li class="footer__item footer__head">
+                Контакты:
+              </li>
+              <li class="footer__item footer__head">
+                +7 (916) 170-00-28
+              </li>
+              <li class="footer__item footer__head">
+                +7 (495) 109-03-53
+              </li>
+              <li class="footer__item footer__head">
+                info@arngroup.ru
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <ul class="footer__service footer__list">
+              <li class="footer__item footer__head">
+                Сервис
+              </li>
+              <li class="footer__item ">
+                Сервисный центр
+              </li>
+              <li class="footer__item">
+                Гарантия работ
+              </li>
+              <li class="footer__item">
+                Отзывы клиентов
+              </li>
+              <li class="footer__item">
+                Клиенты в обслуживании
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <ul class="footer__repair footer__list">
+              <li class="footer__item footer__head">
+                Ремонт
+              </li>
+              <li class="footer__item">
+                Ремонт принтеров
+              </li>
+              <li class="footer__item">
+                Ремонт МФУ
+              </li>
+              <li class="footer__item">
+                Заправка картриджей
+              </li>
+              <li class="footer__item">
+                Пункты ремонта
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="col-12 col-md-4">
-          <ul class="footer__service footer__list">
-            <li class="footer__item footer__head">
-              Сервис
-            </li>
-            <li class="footer__item ">
-              Сервисный центр
-            </li>
-            <li class="footer__item">
-              Гарантия работ
-            </li>
-            <li class="footer__item">
-              Отзывы клиентов
-            </li>
-            <li class="footer__item">
-              Клиенты в обслуживании
-            </li>
-          </ul>
-        </div>
-        <div class="col-12 col-md-4">
-          <ul class="footer__repair footer__list">
-            <li class="footer__item footer__head">
-              Ремонт
-            </li>
-            <li class="footer__item">
-              Ремонт принтеров
-            </li>
-            <li class="footer__item">
-              Ремонт МФУ
-            </li>
-            <li class="footer__item">
-              Заправка картриджей
-            </li>
-            <li class="footer__item">
-              Пункты ремонта
-            </li>
-          </ul>
-        </div>
-      </div>
 
-      <div class="row my-5">
-        <div class="col-12 col-md-4">
-          <ul class="footer__contacts footer__list">
-            <li class="footer__item footer__head">
-              Адрес:
-            </li>
-            <li class="footer__item ">
-              115487, г. Москва, 
-              <br> ул. Садовники, дом 4к1
-            </li>
-            <li class="footer__item ">
-              Понедельник — Пятница
-              <br> 10:00 — 18:00
-            </li>
-          </ul>
+        <div class="row my-md-5">
+          <div class="col-12 col-md-4">
+            <ul class="footer__contacts footer__list">
+              <li class="footer__item footer__head">
+                Адрес:
+              </li>
+              <li class="footer__item ">
+                115487, г. Москва, 
+                <br> ул. Садовники, дом 4к1
+              </li>
+              <li class="footer__item ">
+                Понедельник — Пятница
+                <br> 10:00 — 18:00
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <ul class="footer__service footer__list">
+              <li class="footer__item footer__head">
+                Условия
+              </li>
+              <li class="footer__item ">
+                Договор обслуживания
+              </li>
+              <li class="footer__item">
+                Стоимость услуг
+              </li>
+              <li class="footer__item">
+                Доставка
+              </li>
+              <li class="footer__item">
+                Скидки
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <ul class="footer__repair footer__list">
+              <li class="footer__item footer__head">
+                Обслуживание
+              </li>
+              <li class="footer__item">
+                Диагностика оргтехники
+              </li>
+              <li class="footer__item">
+                Обслуживание оргтехники
+              </li>
+              <li class="footer__item">
+                Обслуживание оргтехники
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="col-12 col-md-4">
-          <ul class="footer__service footer__list">
-            <li class="footer__item footer__head">
-              Условия
-            </li>
-            <li class="footer__item ">
-              Договор обслуживания
-            </li>
-            <li class="footer__item">
-              Стоимость услуг
-            </li>
-            <li class="footer__item">
-              Доставка
-            </li>
-            <li class="footer__item">
-              Скидки
-            </li>
-          </ul>
-        </div>
-        <div class="col-12 col-md-4">
-          <ul class="footer__repair footer__list">
-            <li class="footer__item footer__head">
-              Обслуживание
-            </li>
-            <li class="footer__item">
-              Диагностика оргтехники
-            </li>
-            <li class="footer__item">
-              Обслуживание оргтехники
-            </li>
-            <li class="footer__item">
-              Обслуживание оргтехники
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row pb-3">
-        <div class="col-12 text-center">
-          <h3 class="footer__title footer__item">Ⓒ 2009-2022 Сервисный центр оргтехники</h3>
-          <p class="footer__item">Обслуживание и ремонт офисной техники. Заправка картриджей и бесплатная диагностика</p>
-          <a href="#" class="footer__map">Карта сайта</a>
+        <div class="row pb-3">
+          <div class="col-12 text-center">
+            <h3 class="footer__title footer__item">Ⓒ 2009-2022 Сервисный центр оргтехники</h3>
+            <p class="footer__item">Обслуживание и ремонт офисной техники. Заправка картриджей и бесплатная диагностика</p>
+            <a href="#" class="footer__map">Карта сайта</a>
+          </div>
         </div>
       </div>
     </div>

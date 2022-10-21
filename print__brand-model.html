@@ -27,7 +27,7 @@
       </button>
       <div class="header__title">
         <a href="index.html" class="title__link">
-          <img src="./img/Vector.png" alt="Logo_print" class="title__img title__img-print">
+          <img src="./img/Vector.png" alt="Logo_print" class="title__img title__img-print me-2">
           <img src="./img/ARNGROUP.png" alt="Logo_name" class="title__img title__img-name">
         </a>
       </div> 
@@ -81,18 +81,20 @@
             </form>
           </div>  
           <div class="header__time d-flex align-items-center">
+            <div class="time__img me-2">  
               <img src="./img/time.png" alt="Время работы">
+            </div>
               <span class="time__descr">
                 Пн — Пт <br> 10:00 — 18:00
               </span>
           </div>
           <div class="header__tel d-flex align-items-center">
-            <div class="tel__img">
+            <div class="tel__img me-2">
               <img src="./img/tel.png" alt="Телефон">
             </div>
             <div class="d-flex align-items-center flex-column">
-              <a class="tel__link" href="tel:+79161700028">+7 (916) 170-00-28</a>
               <a class="tel__link" href="tel:+74951090353">+7 (495) 109-03-53</a>
+              <a class="tel__link" href="tel:+79161700028">+7 (916) 170-00-28</a>
             </div> 
           </div>
       </div>
@@ -501,167 +503,196 @@
     </div>
   </section>
 
-  <section class="contacts__info m-5">
-    <div class="container container_hex">
+    <section class="repair section-offset">
+      <div class="container container__repair">
         <div class="row">
+          <div class="col-12">
+            <h2 class="section__title repair__title">
+              Сервисный центр по ремонту офисной техники
+            </h2>
+          </div>
+          <div class="col-9 md-close">
+            <p class="section__descr repair__descr">
+              Сеть сервисных центров на 42 станциях метро. Выездной ремонт по всей Москве
+            </p>
+          </div>
+        </div>
+        <form class="row g-3 needs-validation repair-form" novalidate>
+          <div class="row">
             <div class="col-lg-4 col-12">
-                <ul class="footer__contacts footer__list text-lg-start text-center">
-                    <li class="footer__item footer__head">
-                      Контакты:
-                    </li>
-                    <li class="footer__item footer__head">
-                      +7 (916) 170-00-28
-                    </li>
-                    <li class="footer__item footer__head">
-                      +7 (495) 109-03-53
-                    </li>
-                    <li class="footer__item footer__head">
-                      info@arngroup.ru
-                    </li>
-                    <li class="footer__item footer__head md-close">
-                      <a href="tel:+79161700028" class="link">
-                        <img src="./img/whatUP.png" alt="whatsUP">
-                      </a>
-                      <a href="tel:+79161700028" class="link">
-                        <img src="./img/telegram.png" alt="telegram">
-                      </a>
-                      <a href="mailto:" class="link">
-                        <img src="./img/mail.png" alt="mail">
-                      </a>
-                    </li>
-                  </ul>
+              <select class="form-select repair-select" id="validationCustom01" required>
+                <option selected disabled value="">выбрать бренд</option>
+                <option>...</option>
+                <option>...</option>
+                <option>...</option>
+                <option>...</option>
+              </select>
             </div>
             <div class="col-lg-4 col-12">
-                <ul class="footer__contacts footer__list text-lg-start text-center">
-                    <li class="footer__item footer__head">
-                        Реквизиты:
-                    </li>
-                    <li class="footer__item footer__item_black">
-                        ООО «Бестком» <br>
-                        ИНН 7718868974 <br>
-                        КПП 771801001 <br>
-                        ОГРН 1117746970835 <br>
-                        Р/С 40702810838000031675 <br>
-                        К/С 30101810400000000225 <br>
-                        БИК 044525225 <br>
-                        ПАО «Сбербанк России»
-                    </li>
-                  </ul>
+              <select class="form-select repair-select" id="validationCustom02" required>
+                <option selected disabled value="">выбрать проблему</option>
+                <option>...</option>
+                <option>...</option>
+                <option>...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-lg-4 repair__img md-close">
+              <img src="./img/repair_print.png" alt="Ремонт техники">
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-lg-4 col-12">
+              <select class="form-select repair-select" id="validationCustom03" required>
+                <option selected disabled value="">выбрать модель</option>
+                <option>...</option>
+                <option>...</option>
+                <option>...</option>
+                <option>...</option>
+              </select>
             </div>
             <div class="col-lg-4 col-12">
-                <ul class="footer__contacts footer__list text-lg-start text-center">
-                    <li class="footer__item footer__head">
-                        Адрес:
-                    </li>
-                    <li class="footer__item footer__item_black">
-                        115487, г. Москва, ул. Садовники, дом 4к1
-                    </li>
-                    <li class="footer__item footer__item_black">
-                        Понедельник — Пятница 10:00 — 18:00
-                    </li>
-                  </ul>
+              <input type="tel" name="tel" id="tel_abonent" placeholder="телефон для связи" class="repair-tel" required>
             </div>
-        </div>
-    </div>
-
-    <div class="container my-5 contacts__map">
-        <div class="row">
-            <div class="col-12 p-0">
-              <div style="position:relative;overflow:hidden;" class="map__mark">
-                <iframe src="https://yandex.ru/map-widget/v1/-/CCUZQPUZtB" frameborder="1" allowfullscreen="true"></iframe>
-              </div>
-            
-        </div>
-    </div>
-  </section>
-
-  <section class="pay sm-close">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-              <h2 class="section__title">
-                Способы оплаты
-              </h2>  
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 d-flex mt-4">
-                <div class="pay__img d-flex justify-content-center align-items-center">
-                    <img src="./img/page.png" alt="page">
-                </div>
-                <div class="pay__text ps-4 ms-1">
-                    <h3 class="pay__text__title">Безналичный расчет</h3>
-                    <p class="section__descr ">Оплата по безначному расчету производится юридическими лицами в рублях на основании выставленного счета. Счет действителен в течении 3-х банковских дней. Предоставляемые документы: оригинал счета, УПД, акт выполненных работ</p>
-                </div>
-            </div>
-            <div class="col-12 d-flex mt-4">
-                <div class="pay__img d-flex justify-content-center align-items-center">
-                    <img src="./img/money.png" alt="money">
-                </div>
-                <div class="pay__text ps-3">
-                    <h3 class="pay__text__title">Наличный расчет</h3>
-                    <p class="section__descr ">Заказанный товар или услугу можно оплатить наличными курьеру или менеджеру в сервисном центре в момент получения заказа или техники после ремонта</p>
-                </div>
-            </div>
-            <div class="col-12 d-flex my-4">
-                <div class="pay__img d-flex justify-content-center align-items-center">
-                    <img src="./img/bank__card.png" alt="card">
-                </div>
-                <div class="pay__text ps-3">
-                    <h3 class="pay__text__title">Оплата онлайн на сайте</h3>
-                    <p class="section__descr ">При необходимости оплаты с помощью банковской карты менеджер пришлет ссылку. Проведение платежей по банковским картам осуществляется в строгом соответствии с требованиями платежных систем</p>
-                </div>
-            </div>
-        </div>
-    </div>
-  </section>
-  
-  <section class="section-offset consultation m-5 sm-close">
-    <div class="container container__consultation__contacts py-3">
-      <div class="row my-4">
-        <div class="col-5">
-        </div>
-        <div class="col-7">
-          <h2 class="section__title">Большой опыт!</h2>
-          <span class="tel__descr">Осуществляем ремонт офисной техники и заправку картриджей 
-            с 2004 года</span>
-        </div>
+          </div>
+          <div class="col-12 mt-0 mt-lg-3">
+            <button class="btn btn-warning btn-perfect btn-mobile mt-3" type="submit">Рассчитать ремонт</button>
+          </div>
+        </form>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="model my-5 sm-close">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="section__title">
-                    Какие модели принтеров мы ремонтируем
-                </h2>
+    <section class="model my-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h2 class="section__title ">
+                        Срочный ремонт принтера Hewlett-Packard (HP)
+                    </h2>
+                </div>
+                <div class="col-12 col-md-6 breakdowns mx-auto">
+                    <a href="#" class="breakdowns__block model__block__print">  
+                        <img src="./img/hp.png" alt="hp" class="model__img img-fluid">
+                    </a>
+                </div>
             </div>
+            <div class="container container__accord my-5 text-center">
+                <h3 class="service__title">Выберете нужную Вам модель принтера HP</h3>
+                <div class="row">
+                  <div class="col-4">
+                    <ul class="model__list">
+                      <li class="model__item">
+                        <a href="" class="model__link">
+                        Модель HP
+                        </a>
+                      </li>
+                      <li class="model__item">
+                        <a href="" class="model__link">
+                        Модель HP
+                        </a>
+                      </li>
+                      <li class="model__item">
+                        <a href="" class="model__link">
+                        Модель HP
+                        </a>
+                      </li>
+                      <li class="model__item">
+                        <a href="" class="model__link">
+                        Модель HP
+                        </a>
+                      </li>
+                      <li class="model__item">
+                        <a href="" class="model__link">
+                        Модель HP
+                        </a>
+                      </li>
+                      <li class="model__item">
+                        <a href="" class="model__link">
+                        Модель HP
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-4">
+                    <ul class="model__list">
+                      <li class="model__item">
+                        <a href="" class="model__link">
+                        Модель HP
+                        </a>
+                      </li>
+                      <li class="model__item">
+                        <a href="" class="model__link">
+                        Модель HP
+                        </a>
+                      </li>
+                      <li class="model__item">
+                        <a href="" class="model__link">
+                        Модель HP
+                        </a>
+                      </li>
+                      <li class="model__item">
+                        <a href="" class="model__link">
+                        Модель HP
+                        </a>
+                      </li>
+                      <li class="model__item">
+                        <a href="" class="model__link">
+                        Модель HP
+                        </a>
+                      </li>
+                      <li class="model__item">
+                        <a href="" class="model__link">
+                        Модель HP
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-4">
+                    <ul class="model__list">
+                      <li class="model__item">
+                        <a href="" class="model__link">
+                        Модель HP
+                        </a>
+                      </li>
+                      <li class="model__item">
+                        <a href="" class="model__link">
+                        Модель HP
+                        </a>
+                      </li>
+                      <li class="model__item">
+                        <a href="" class="model__link">
+                        Модель HP
+                        </a>
+                      </li>
+                      <li class="model__item">
+                        <a href="" class="model__link">
+                        Модель HP
+                        </a>
+                      </li>
+                      <li class="model__item">
+                        <a href="" class="model__link">
+                        Модель HP
+                        </a>
+                      </li>
+                      <li class="model__item">
+                        <a href="" class="model__link">
+                        Модель HP
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-perfect mt-4 btn_call mx-auto">Заказать консультацию</a>
+                  </div>
+                </div>
+              </div>
         </div>
-        <div class="row my-5">
-            <div class="col-3 d-flex justify-content-center align-items-center"><img src="./img/hp.png" alt="hp" class="model__img"></div>
-            <div class="col-3 d-flex justify-content-center align-items-center"><img src="./img/canon.png" alt="canon" class="model__img"></div>
-            <div class="col-3 d-flex justify-content-center align-items-center"><img src="./img/xerox.png" alt="xerox" class="model__img"></div>
-            <div class="col-3 d-flex justify-content-center align-items-center"><img src="./img/samsung.png" alt="samsung" class="model__img"></div>
-        </div>
-        <div class="row mb-5">
-            <div class="col-3 d-flex justify-content-center align-items-center"><img src="./img/kyocera.png" alt="kyocera" class="model__img"></div>
-            <div class="col-3 d-flex justify-content-center align-items-center"><img src="./img/brother.png" alt="brother" class="model__img"></div>
-            <div class="col-3 d-flex justify-content-center align-items-center"><img src="./img/lemark.png" alt="lemark" class="model__img"></div>
-            <div class="col-3 d-flex justify-content-center align-items-center"><img src="./img/ricoh.png" alt="ricoh" class="model__img"></div>
-        </div>
-        <div class="row mb-5">
-            <div class="col-4 d-flex justify-content-center align-items-center"><img src="./img/panasonic.png" alt="panasonic" class="model__img"></div>
-            <div class="col-4 d-flex justify-content-center align-items-center"><img src="./img/pantum.png" alt="pantum" class="model__img"></div>
-            <div class="col-4 d-flex justify-content-center align-items-center"><img src="./img/konica.png" alt="konica" class="model__img"></div>
-        </div>
-    </div>
-  </section>
+      </section>
 
 
-  
-  <section class="section-offset service">
+    <section class="section-offset service">
       <div class="container container__accord">
         <div class="row">
           <div class="col-lg-8">
@@ -699,174 +730,173 @@
           </div>
         </div>
       </div>
-  </section>
+    </section>
 
-  <footer class="footer-bg text-lg-start text-center">
-      <div class="footer">
-        <div class="container pt-5">
-          <div class="row ">
-            <div class="col-12 col-md-4">
-              <ul class="footer__contacts footer__list">
-                <li class="footer__item footer__head">
-                  Контакты:
-                </li>
-                <li class="footer__item footer__head">
-                  +7 (916) 170-00-28
-                </li>
-                <li class="footer__item footer__head">
-                  +7 (495) 109-03-53
-                </li>
-                <li class="footer__item footer__head">
-                  info@arngroup.ru
-                </li>
-              </ul>
-            </div>
-            <div class="col-12 col-md-4">
-              <ul class="footer__service footer__list">
-                <li class="footer__item footer__head">
-                  Сервис
-                </li>
-                <li class="footer__item ">
-                  Сервисный центр
-                </li>
-                <li class="footer__item">
-                  Гарантия работ
-                </li>
-                <li class="footer__item">
-                  Отзывы клиентов
-                </li>
-                <li class="footer__item">
-                  Клиенты в обслуживании
-                </li>
-              </ul>
-            </div>
-            <div class="col-12 col-md-4">
-              <ul class="footer__repair footer__list">
-                <li class="footer__item footer__head">
-                  Ремонт
-                </li>
-                <li class="footer__item">
-                  Ремонт принтеров
-                </li>
-                <li class="footer__item">
-                  Ремонт МФУ
-                </li>
-                <li class="footer__item">
-                  Заправка картриджей
-                </li>
-                <li class="footer__item">
-                  Пункты ремонта
-                </li>
-              </ul>
-            </div>
+  <footer class="text-lg-start text-center footer-bg">
+    <div class="footer">
+      <div class="container pt-5">
+        <div class="row ">
+          <div class="col-12 col-md-4">
+            <ul class="footer__contacts footer__list">
+              <li class="footer__item footer__head">
+                Контакты:
+              </li>
+              <li class="footer__item footer__head">
+                +7 (916) 170-00-28
+              </li>
+              <li class="footer__item footer__head">
+                +7 (495) 109-03-53
+              </li>
+              <li class="footer__item footer__head">
+                info@arngroup.ru
+              </li>
+            </ul>
           </div>
-  
-          <div class="row my-md-5">
-            <div class="col-12 col-md-4">
-              <ul class="footer__contacts footer__list">
-                <li class="footer__item footer__head">
-                  Адрес:
-                </li>
-                <li class="footer__item ">
-                  115487, г. Москва, 
-                  <br> ул. Садовники, дом 4к1
-                </li>
-                <li class="footer__item ">
-                  Понедельник — Пятница
-                  <br> 10:00 — 18:00
-                </li>
-              </ul>
-            </div>
-            <div class="col-12 col-md-4">
-              <ul class="footer__service footer__list">
-                <li class="footer__item footer__head">
-                  Условия
-                </li>
-                <li class="footer__item ">
-                  Договор обслуживания
-                </li>
-                <li class="footer__item">
-                  Стоимость услуг
-                </li>
-                <li class="footer__item">
-                  Доставка
-                </li>
-                <li class="footer__item">
-                  Скидки
-                </li>
-              </ul>
-            </div>
-            <div class="col-12 col-md-4">
-              <ul class="footer__repair footer__list">
-                <li class="footer__item footer__head">
-                  Обслуживание
-                </li>
-                <li class="footer__item">
-                  Диагностика оргтехники
-                </li>
-                <li class="footer__item">
-                  Обслуживание оргтехники
-                </li>
-                <li class="footer__item">
-                  Обслуживание оргтехники
-                </li>
-              </ul>
-            </div>
+          <div class="col-12 col-md-4">
+            <ul class="footer__service footer__list">
+              <li class="footer__item footer__head">
+                Сервис
+              </li>
+              <li class="footer__item ">
+                Сервисный центр
+              </li>
+              <li class="footer__item">
+                Гарантия работ
+              </li>
+              <li class="footer__item">
+                Отзывы клиентов
+              </li>
+              <li class="footer__item">
+                Клиенты в обслуживании
+              </li>
+            </ul>
           </div>
-          <div class="row pb-3">
-            <div class="col-12 text-center">
-              <h3 class="footer__title footer__item">Ⓒ 2009-2022 Сервисный центр оргтехники</h3>
-              <p class="footer__item">Обслуживание и ремонт офисной техники. Заправка картриджей и бесплатная диагностика</p>
-              <a href="#" class="footer__map">Карта сайта</a>
-            </div>
+          <div class="col-12 col-md-4">
+            <ul class="footer__repair footer__list">
+              <li class="footer__item footer__head">
+                Ремонт
+              </li>
+              <li class="footer__item">
+                Ремонт принтеров
+              </li>
+              <li class="footer__item">
+                Ремонт МФУ
+              </li>
+              <li class="footer__item">
+                Заправка картриджей
+              </li>
+              <li class="footer__item">
+                Пункты ремонта
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-  </footer>
 
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header border-0">
-          <button type="button" class="close modal__button" data-bs-dismiss="modal" aria-label="Close">
-          </button>
+        <div class="row my-md-5">
+          <div class="col-12 col-md-4">
+            <ul class="footer__contacts footer__list">
+              <li class="footer__item footer__head">
+                Адрес:
+              </li>
+              <li class="footer__item ">
+                115487, г. Москва, 
+                <br> ул. Садовники, дом 4к1
+              </li>
+              <li class="footer__item ">
+                Понедельник — Пятница
+                <br> 10:00 — 18:00
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <ul class="footer__service footer__list">
+              <li class="footer__item footer__head">
+                Условия
+              </li>
+              <li class="footer__item ">
+                Договор обслуживания
+              </li>
+              <li class="footer__item">
+                Стоимость услуг
+              </li>
+              <li class="footer__item">
+                Доставка
+              </li>
+              <li class="footer__item">
+                Скидки
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <ul class="footer__repair footer__list">
+              <li class="footer__item footer__head">
+                Обслуживание
+              </li>
+              <li class="footer__item">
+                Диагностика оргтехники
+              </li>
+              <li class="footer__item">
+                Обслуживание оргтехники
+              </li>
+              <li class="footer__item">
+                Обслуживание оргтехники
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="modal-body pt-0">
-            <form action="" method="post">
-                <h3 class="modal-title" id="exampleModalLabel">Заказать обратный звонок</h3>
-                <p class="modal__descr form__link__descr">Заполните заявку и наш менеджер свяжется с вами</p>
-                <div class="row">
-                    <div class="col-12 mt-xl-0 my-3">
-                      <input class="form__link__input modal-input" type="text" name="Name" id="FirsName" required placeholder="Ваше имя">
-                    </div>
-                    <div class="col-12 mt-xl-0 mt-3">
-                      <input class="form__link__input modal-input" type="tel" name="tel" id="tel" required placeholder="+7">
-                    </div>
-                  </div>
-    
-                  <div class="row my-3">
-                    <div class="col-12">
-                      <input type="text" class="form__link__input modal-input form__link__question" name="question" id="question" placeholder="Ваш вопрос">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <p class="form__link__descr modal__descr_small">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности</p>
-                    </div>
-                    <div class="col-12 mb-3">
-                      <button type="submit" data-bs-dismiss="modal" class="btn btn-perfect btn_call modal__btn">Отправить</button>
-                    </div>
-                  </div>
-            </form>
+        <div class="row pb-3">
+          <div class="col-12 text-center">
+            <h3 class="footer__title footer__item">Ⓒ 2009-2022 Сервисный центр оргтехники</h3>
+            <p class="footer__item">Обслуживание и ремонт офисной техники. Заправка картриджей и бесплатная диагностика</p>
+            <a href="#" class="footer__map">Карта сайта</a>
+          </div>
         </div>
-        <!-- <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" >Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div> -->
       </div>
     </div>
+  </footer>
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <button type="button" class="close modal__button" data-bs-dismiss="modal" aria-label="Close">
+        </button>
+      </div>
+      <div class="modal-body pt-0">
+          <form action="" method="post">
+              <h3 class="modal-title" id="exampleModalLabel">Заказать обратный звонок</h3>
+              <p class="modal__descr form__link__descr">Заполните заявку и наш менеджер свяжется с вами</p>
+              <div class="row">
+                  <div class="col-12 mt-lg-0 my-3">
+                    <input class="form__link__input modal-input" type="text" name="Name" id="FirsName" required placeholder="Ваше имя">
+                  </div>
+                  <div class="col-12 mt-lg-0 mt-3">
+                    <input class="form__link__input modal-input" type="tel" name="tel" id="tel" required placeholder="+7">
+                  </div>
+                </div>
+  
+                <div class="row my-3">
+                  <div class="col-12">
+                    <input type="text" class="form__link__input modal-input form__link__question" name="question" id="question" placeholder="Ваш вопрос">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <p class="form__link__descr modal__descr_small">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности</p>
+                  </div>
+                  <div class="col-12 mb-3">
+                    <button type="submit" data-bs-dismiss="modal" class="btn btn-perfect btn_call modal__btn">Отправить</button>
+                  </div>
+                </div>
+          </form>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" >Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
   </div>
+</div>
   <script src="./js/bootstrap.bundle.js"></script>
   <script src="./js/accord.js"></script>
 </body>

@@ -252,7 +252,7 @@
   .container__repair {
     position: relative;
     padding: 40px 80px;
-    height: 400px;
+    min-height: 430px;
   
     border-radius: 1.4rem;
     background: -webkit-gradient(linear, left top, right top, from(#6AB8FF), color-stop(100.41%, #0957CB));
@@ -1037,7 +1037,21 @@
   }
   
   /* breakdowns */
-  
+  .model__block__print {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: all .2s ease;
+  }
+
+  .model__block__print:hover {
+    transform: scale(1.2);
+  }
+
   .breakdowns__block {
     /* width: 220px; */
     height: 217px;
